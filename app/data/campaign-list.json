@@ -1,0 +1,7 @@
+[
+  {"campaign_id": 3, "name": "Google", "impressions": 5682045232},
+  {"campaign_id": 1, "name": "Meta", "impressions": 7682009847},
+  {"campaign_id": 2, "name": "Apple", "impressions": 668324847},
+  {"campaign_id": 4, "name": "Samsung", "impressions": 46345623},
+  {"campaign_id": 5, "name": "Amazon", "impressions": 89234}
+]

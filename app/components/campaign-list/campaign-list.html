@@ -1,0 +1,26 @@
+<div>
+    <p>
+        <label class="campaign-list-filter">
+            Filter:
+            <input class="campaign-list-filter-input" ng-model="$ctrl.campaignName"/>
+        </label>
+    </p>
+    <div>
+        <table class="campaign-list-table">
+            <thead>
+            <tr>
+                <th class="campaign-list-cell">Campaign Id</th>
+                <th class="campaign-list-cell">Name</th>
+                <th class="campaign-list-cell">Impressions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="campaign in $ctrl.campaigns | filter:{name: $ctrl.campaignName} | orderBy:'campaign_id'">
+                <td class="campaign-list-cell">{{campaign.campaign_id}}</td>
+                <td class="campaign-list-cell">{{campaign.name}}</td>
+                <td class="campaign-list-cell">{{campaign.impressions | shortNumber}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
